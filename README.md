@@ -10,3 +10,4 @@ Created search and sorting functions to allow users to know book availability an
 
 JavaScript ES6, Bootstrap, HTML5, Node.js
 
+![Alt text](./LocalLibrary.png)
