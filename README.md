@@ -6,8 +6,14 @@ Local Library assembles the functionality for an application that allows users t
 
 Created search and sorting functions to allow users to know book availability and rating.
 
+## Home View
+![Alt text](./LocalLibrary.png)
+
 ## Built with:
 
 JavaScript ES6, Bootstrap, HTML5, Node.js
 
-![Alt text](./LocalLibrary.png)
+
+
+
+
