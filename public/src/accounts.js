@@ -1,20 +1,23 @@
-function findAccountById(accounts, id) {
-  return accounts.find((accountsObj)=>accountsObj.id===id)
+function findAccountById(accounts=[], id="") {
+  return accounts.find((accountObj)=>accountObj.id===id)
+
 }
 
 function sortAccountsByLastName(accounts) {
-  return accounts.sort((accountA, accountB)=>(accountA.name.last.toLowerCase() > accountB.name.last.toLowerCase() ? 1 : -1)
-  )
+let sorter=accounts.sort((nameA, nameB)=>{
+  return nameA.name.last.toLowerCase() > nameB.name.last.toLowerCase() ? 1 : -1
+})
+return sorter
 }
 
 function getTotalNumberOfBorrows(account={}, books=[]) {
-let total =0
+let total=0
 books.forEach((booksObj)=>{
   const {borrows}=booksObj
-  borrows.forEach((borrowObj)=>{
-   if (borrowObj.id===account.id) {
-    total++
-   }
+  borrows.forEach((borrowid)=>{
+   if (borrowid.id===account.id){
+    total+= 1
+  }
   })
 })
 return total
